@@ -1,0 +1,35 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background-color: rgba(236, 238, 242, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid var(--grey);
+    width: fit-content;
+    cursor: pointer;
+    transition: var(--btn-anim);
+}
+
+.content{
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    color: var(--dark-grey);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--btn-anim);
+}
+
+.btn:hover .content{
+    color: var(--darkest-grey);
+}
+
+.btn:active .content{
+    color: var(--darkest-grey);
+    background-color: var(--grey);
+}

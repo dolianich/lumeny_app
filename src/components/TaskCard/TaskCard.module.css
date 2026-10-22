@@ -1,0 +1,45 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    flex: 1;
+    min-width: 340px;
+}
+
+.topSection{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.topSection span{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.description{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--dark-grey);
+    height: 48px;
+    margin: 16px 0;
+}
+
+.bullets{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}

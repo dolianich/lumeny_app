@@ -1,0 +1,27 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-grey);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    gap: 8px;
+    margin: 0 24px 0;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--btn-anim);
+}
+
+.btn:hover{
+    color: var(--darkest-grey);
+}
+
+@media(max-width: 450px){
+    .btn{
+        margin: 0;
+    }
+}

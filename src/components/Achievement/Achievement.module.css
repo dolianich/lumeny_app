@@ -1,0 +1,17 @@
+.wrapper{
+    min-width: 272px;
+    height: auto;
+    aspect-ratio: 1;
+    background-color: var(--white);
+    border-radius: 40px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 700px){
+    .wrapper{
+        min-width: 150px;
+    }
+}

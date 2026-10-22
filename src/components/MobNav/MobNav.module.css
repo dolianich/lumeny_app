@@ -1,0 +1,31 @@
+.navigation{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 700px){
+    .navigation{
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 450px){
+    .navigation{
+        margin: 0px 40px 12px 40px;
+        width: calc(100% - 80px);
+    }
+}

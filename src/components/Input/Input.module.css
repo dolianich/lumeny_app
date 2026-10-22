@@ -1,0 +1,30 @@
+.fieldWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fieldWrapper input{
+    padding: 14px;
+    border-radius: 16px;
+    border: 2px solid var(--grey);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    background-color: var(--grey);
+    color: var(--dark);
+    outline: none;
+}
+
+.fieldWrapper input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: var(--grey);
+    color: var(--dark-grey);
+}
+
+.fieldWrapper input:focus{
+    border: 2px solid var(--primary);
+  }

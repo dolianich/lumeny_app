@@ -1,0 +1,53 @@
+.progressBar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top span{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+}
+
+.bar{
+    display: flex;
+    background-color: var(--grey);
+    height: 16px;
+    border-radius: 100px;
+}
+
+.progress{
+    height: 100%;
+    border-radius: 100px;
+    transition: all ease-in-out 0.2s;
+    background: var(--gradient);
+    animation: softPulse 3s ease-in-out infinite;
+}
+
+@keyframes softPulse {
+    0%, 100% { 
+      filter: brightness(1) contrast(1);
+    }
+    50% { 
+      filter: brightness(1.1) contrast(1.1);
+    }
+}
+
+@media(max-width: 1000px){
+    .top span{
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.1px;
+    }
+}
+

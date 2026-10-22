@@ -1,0 +1,25 @@
+.text{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 900px){
+    .text{
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.1px;
+    }
+}
+
+@media (max-width: 450px){
+    .text{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.15px;
+        margin-bottom: 16px;
+    }
+}

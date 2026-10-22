@@ -1,0 +1,31 @@
+.badge{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.badgeTheory{
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.badgeChallenge{
+    background-color: var(--secondary-light);
+    color: var(--secondary);
+}
+
+.badge span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+@media(max-width: 450px){
+    .badge{
+        display: none;
+    }
+}

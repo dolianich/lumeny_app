@@ -1,0 +1,41 @@
+.challengeContent{
+    padding-top: 104px;
+    margin: 0 24px 89px;
+}
+
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+@media (max-width: 900px){
+    .challengeContent{
+        padding-top: 88px;
+        margin-bottom: 45px;
+    }
+    .answers{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 700px){
+    .challengeContent{
+        padding-top: 80px;
+        margin-bottom: 41px;
+    }
+}
+
+@media (max-width: 450px){
+    .challengeContent{
+        padding-top: 72px;
+        margin-bottom: 49px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .answers{
+        margin-top: 48px;
+        gap: 16px;
+    }
+}

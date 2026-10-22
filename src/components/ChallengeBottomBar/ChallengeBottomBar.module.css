@@ -1,0 +1,120 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 320px);
+    z-index: 2;
+    max-width: 1120px;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: var(--bg);
+}
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.btn{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: none;
+    color: var(--white);
+    background-color: var(--secondary);
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--btn-anim);
+}
+
+.btn:disabled{
+    background-color: var(--grey);
+    color: var(--dark-grey);
+    cursor: not-allowed;
+}
+
+.btnCorrect{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--btn-anim);
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.btnWrong{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--btn-anim);
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.btn:active{
+    transform: scale(0.96);
+}
+
+.btnCorrect:active{
+    transform: scale(0.96);
+}
+
+.btnWrong:active{
+    transform: scale(0.96);
+}
+
+@media (max-width: 900px){
+    .wrapper{
+        width: calc(100% - 128px);
+    }
+}
+
+@media (max-width: 700px){
+    .wrapper{
+        width: calc(100% - 48px);
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 450px){
+    .wrapper{
+        width: calc(100% - 32px);
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+}

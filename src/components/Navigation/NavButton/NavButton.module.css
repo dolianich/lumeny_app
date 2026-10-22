@@ -1,0 +1,40 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    flex: 1;
+    cursor: pointer;
+    transition: var(--btn-anim);
+}
+
+.selected{
+    color: var(--primary);
+    background-color: var(--white);
+}
+
+.default{
+    color: var(--dark-grey);
+    background-color: transparent;
+}
+
+.default:hover{
+    color: var(--dark-grey);
+    background-color: var(--white);
+}
+
+.default:active{
+    color: var(--darkest-grey);
+    background-color: var(--grey);
+}
+
+.defaultMobile{
+    color: var(--dark-grey);
+    background-color: transparent;
+}
+
+.defaultMobile:active{
+    color: var(--darkest-grey);
+    background-color: var(--grey);
+}

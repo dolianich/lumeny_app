@@ -1,0 +1,66 @@
+.answerBtn input[type=radio]{
+    display: none;
+}
+
+.answerBtn label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: var(--dark);
+    cursor: pointer;
+    padding: 24px;
+    border-radius: 18px;
+    border: 2px solid var(--grey);
+    background-color: var(--white);
+    transition: var(--btn-anim);
+}
+
+
+.answerBtn label:hover{
+    border-color: var(--secondary);
+    transition: var(--btn-anim);
+}
+
+.answerBtn label:active{
+    background-color: var(--bg);
+}
+
+.answerBtn input[type=radio]:checked + label{
+    border-color: var(--secondary);
+}
+
+.answerBtn.correct input[type=radio]:checked + label,
+.answerBtn.correct label {
+    background-color: var(--secondary-light);
+    border-color: var(--secondary);
+}
+
+.answerBtn.incorrect input[type=radio]:checked + label,
+.answerBtn.incorrect label{
+    background-color: var(--light-red);
+    border-color: var(--red);
+}
+
+@media (max-width: 450px){
+    .answerBtn label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: var(--dark);
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 18px;
+    border: 2px solid var(--grey);
+    background-color: var(--white);
+    transition: var(--btn-anim);
+}
+.answerBtn label:hover{
+    border-color: var(--grey);
+}
+}

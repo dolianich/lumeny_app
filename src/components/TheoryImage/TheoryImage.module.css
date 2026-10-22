@@ -1,0 +1,34 @@
+.imgContainer{
+    width: 100%;
+    height: 360px;
+    border-radius: 40px;
+    overflow: hidden;
+    background-image: url(../../assets/theoryBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer img{
+    height: 80%;
+    width: auto;
+    aspect-ratio: 1/1;
+}
+
+@media(max-width: 900){
+    .imgContainer{
+        height: 300px;
+    }
+}
+
+@media(max-width: 450px){
+    .imgContainer{
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .imgContainer img{
+        height: 80%;
+    }
+}

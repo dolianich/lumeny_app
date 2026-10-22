@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+@media (max-width: 900px){
+    .container{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 450px){
+    .container{
+        gap: 16px;
+        margin-top: 20px;
+    }
+}

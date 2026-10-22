@@ -1,0 +1,16 @@
+.description{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+@media(max-width: 1000px){
+    .description{
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.1px;
+    }
+}

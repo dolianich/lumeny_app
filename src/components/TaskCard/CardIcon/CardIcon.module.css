@@ -1,0 +1,18 @@
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+}
+
+.iconTheory{
+    color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+.iconChallenge{
+    color: var(--secondary);
+    background-color: var(--secondary-light);
+}

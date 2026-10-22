@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100dvh - 48px);
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnFinish{
+    width: 50%;
+}
+
+.btnFinish button{
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: none;
+    color: var(--white);
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--btn-anim);
+    background-color: var(--secondary);
+}
+
+.btnFinish button:hover{
+    background-color: var(--secondary-darker);
+    color: var(--pure-white);
+}
+
+.btnFinish button:active{
+    transform: scale(0.96);
+}
+
+.btnAgain {
+    padding: 14px 30px;
+    border-radius: 16px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 50%;
+    transition: var(--btn-anim);
+    background-color: var(--secondary-light);
+}
+
+.btnAgain:hover{
+    border-color: var(--secondary-darker);
+    color: var(--secondary-darker);
+}
+
+.btnAgain:active{
+    transform: scale(0.96);
+}
+
+.pointsWrapper{
+    margin-top: 16px;
+}
+
+.text h3{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--dark);
+}
+
+.text p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: var(--dark-grey);
+}
+
+.container button{
+    margin-top: 24px;
+}
+
+@media (max-width: 900px){
+    .container{
+        height: calc(100dvh - 116px);
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        height: calc(100dvh - 104px);
+        gap: 16px;
+    }
+    .pointsWrapper{
+        margin-top: 8px;
+    }
+    .container button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .container{
+        height: calc(100dvh - 92px);
+    }
+    .btnFinish{
+        position: fixed;
+        bottom: 0;
+        width: calc(100% - 32px);
+        z-index: 2;
+        margin-bottom: 16px;
+    }
+}

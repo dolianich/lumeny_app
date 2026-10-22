@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.static{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--primary-light);
+}
+
+.inProgress{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.done{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--primary);
+}
+
+.animation{
+    width: 100%;
+    height: 100%;
+}

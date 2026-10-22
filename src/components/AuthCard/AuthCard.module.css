@@ -1,0 +1,193 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 104px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 40px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    width: 420px;
+}
+
+.card h3{
+    margin: 12px 0 24px 0;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0px;
+    color: var(--dark);
+}
+
+.card form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.passwordField{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card span{
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.divider span{
+    color: var(--dark-grey);
+}
+
+.forgotPassword{
+    text-align: right;
+    width: 100%;
+    color: var(--dark-grey);
+}
+
+.signUpLink{
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hint{
+    color: var(--dark-grey);
+}
+
+.googleBtn{
+    padding: 15px 31px;
+    background-color: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--grey);
+    color: var(--dark);
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: var(--btn-anim);
+}
+
+.googleBtn:active{
+    transform: scale(0.96);
+}
+
+.fieldWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fieldWrapper input{
+    padding: 14px;
+    border-radius: 16px;
+    border: 2px solid var(--grey);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    background-color: var(--grey);
+    color: var(--dark);
+    outline: none;
+}
+
+.fieldWrapper input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--dark-grey);
+}
+
+.fieldWrapper input:focus{
+    border: 2px solid var(--primary);
+}
+
+.btn{
+    padding: 16px 32px;
+    background-color: var(--primary);
+    border-radius: 16px;
+    border: none;
+    color: var(--white);
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--btn-anim);
+}
+
+.btn:hover{
+    background-color: var(--primary-darker);
+    color: var(--pure-white);
+}
+
+.btn:active{
+    transform: scale(0.96);
+}
+
+@media(max-width: 500px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+      margin-top: 88px;
+    }
+  }
+  
+  @media (max-width: 700px){
+    .container{
+      margin-top: 80px;
+    }
+  }
+  
+  @media (max-width: 450px){
+    .container{
+      margin-top: 0px;
+    }
+    .card{
+        padding-top: 72px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .btn:hover{
+        background-color: var(--primary);
+    }
+  }
